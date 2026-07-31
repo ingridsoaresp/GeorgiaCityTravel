@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 10
+      
+
+      Driving Directions Form
+      Author: Ingrid Pimentel 
+      Date: 11/5/2025 
+
+      
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Lab 10</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="script.js" defer></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA4rZLKYimNCd-aoxwIpuGiN01ws_0Tkg&callback=showMap" defer></script>
+
+
+ 
+</head>
+
+<body>
+   <header>
+      <h1>
+         Lab 10
+      </h1>
+   </header>
+
+   <section>
+      <h1>Georgia City Travel </h1>
+      <p>Choose an origin and a destination city</p>
+      
+      <fieldset>
+         <select id="startingPoint" size="7">
+            <option value="" selected>Starting City</option> 
+			<option value="Acworth,GA">Acworth</option>
+			<option value="Alpharetta">Alpharetta</option>
+			<option value="Atlanta,GA">Atlanta</option>
+            <option value="Athens,GA">Athens</option>
+			<option value="Augusta,GA">Augusta</option>
+			<option value="Columbus,GA">Columbus</option>
+            <option value="Macon,GA">Macon</option>
+            <option value="Savannah,GA">Savannah</option>
+            <option value="Valdosta,GA">Valdosta</option>            
+            
+         </select>
+         
+         <select id="endingPoint" size="7">
+            <option value="" selected>Ending City</option>
+			<option value="Acworth,GA">Acworth</option>
+			<option value="Alpahretta">Alpahretta</option>
+			<option value="Atlanta,GA">Atlanta</option>
+            <option value="Athens,GA">Athens</option>
+			<option value="Augusta,GA">Augusta</option>
+			<option value="Columbus,GA">Columbus</option>
+            <option value="Macon,GA">Macon</option>
+            <option value="Savannah,GA">Savannah</option>
+            <option value="Valdosta,GA">Valdosta</option>
+         </select>
+      </fieldset>
+      
+      <div id="driveMap"></div>
+      <div id="driveDirections"></div>
+      
+   </section>
+</body>
+</html>
